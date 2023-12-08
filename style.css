@@ -1,0 +1,580 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Open Sans', sans-serif;
+}
+#bn{
+    font-family: 'Tiro Bangla', serif;
+
+}
+body{
+    background: rgba(216, 215, 215, 0.83);
+}
+/* -----------Modal Start-------------- */
+.modal{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    position: relative;
+    border: 7px solid green;
+}
+.modal img{
+    width: 60%;
+    padding-top: 30px;
+    margin-left: 20% ;
+}
+.modal-info{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    background: green;
+    padding: 7px;
+    color: #fff;
+}
+.modal-info p{
+    color: #fff;
+    padding: 0;
+}
+.modal-info .fa-solid{
+    color: white;
+    padding: 0 5px;
+}
+
+/*---------------- End Of Modal------------ */
+
+
+
+
+
+
+
+
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/hero.png); 
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+}
+
+nav img{
+    width: 50px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+nav .fa{
+    display: none;
+}
+
+/* Text box start */
+
+.hero-text{
+    color: #fff;
+    text-align: center;
+    margin-top: 20vh;
+}
+.hero-text h1{
+    font-size: 36px;
+    margin-bottom: 1%;
+}
+.hero-text p{
+    font-size: 14px;
+    padding: 0;
+}
+
+/*------------***-----------*/
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+    
+}
+
+
+/*--------------- Body content-------------- */
+
+.body-content{
+    width: 90%;
+    margin:  auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0 50px 0;
+    background: #fafafa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.65);
+}
+
+.main-content{
+    width: 73%;
+    margin:0 auto;
+    
+}
+.said-content{
+    width: 25%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+
+/* ---------------Marque news---------------  */
+.marque-news{
+    position: relative;
+    width: 100%;
+    background: green;
+}
+.marque-news h3{
+    color: #fff;
+    padding: 10px;
+    font-size: 22px;
+    
+}
+.marque-news marquee{
+    position: absolute;
+    width: 80%;
+    right: 0;
+    top: 15px;
+    color: #fff;
+    font-size: 16px;
+}
+
+/*--------------Notice Board----------*/
+
+.notice{
+    width: 100%;
+    padding-top: 50px;
+    position: relative;
+}
+.notice h3{
+    font-size: 26px;
+    text-align: center;
+    color:  #ff7600;
+    font-weight: bold;
+    padding-bottom: 1%;
+    border-bottom: 2px solid #ff7600;
+}
+.notice-col{
+    width: 95%;
+    height: 500px;
+    margin:20px auto;
+    padding-top: 
+    border: 1px solid #ccc;
+    position: relative;
+    overflow:hidden;
+}
+table{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-collapse: collapse;
+}
+table tr:nth-child(odd){
+    background-color: #d8d8d8;
+}
+table td, th{
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+table td a{
+    text-decoration: none;
+    color: #196f8e;
+}
+table td img{
+    width: 30px;
+}
+
+/*----------Button--------*/
+
+.hero-btn{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    padding: 3px 7px;
+    background-color: #ccc;
+    border-radius: 10px;
+    position: absolute;
+    border-bottom: 0;
+    right: 23px;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.hero-btn:hover{
+    background: #ff7600;
+    color: white;
+}
+
+
+
+/*-----------Campus-------------*/
+
+.campus{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(226,0,0,0.7);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+
+/*---------------Facilities-------------*/
+
+.facilities{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.facilities-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+.facilities-col p{
+    padding: 0;
+}
+.facilities-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+
+
+/*<!------------Footer------------->*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.icons .fa-brands{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.fa-heart{
+    color: #f44336;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------Side Content------------*/
+
+
+
+/* -----Chief-Instructor info Start-----*/
+
+.headline h2 {
+    padding: 7px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    background-color: green;
+}
+.teachersInfo-col{
+    width: 70%;
+    background-color: #f2f2f2;
+    box-shadow: 0px 0px 5px #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 11px auto; 
+}
+.teachersInfo-col img{
+    width: 100%;
+    height: auto;
+    margin:0 auto;
+}
+
+.teachersInfo-col h3{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 3px;
+}
+.teachersInfo-col p{
+    text-align: center;
+    font-size: 16px;
+    padding: 0;
+    line-height: 30px;
+}
+.deem{
+    font-size: 10px;
+}
+
+
+
+/*---------------National Anthem---------*/
+
+.anthem-col {
+    margin: auto;
+    padding-top: 10px;
+}
+
+/*-----------Facebook Page-----------*/
+
+.fbPage-col{
+    margin: 20px auto;
+}
+
+
+/*--------------Notice Board page----------*/
+
+.sub-header{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/noticepage.png); 
+}
+
+.notice-page-col{
+    height: 3000px;
+    overflow: auto;
+}
+.showAll{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------Responsive----------------*/
+
+@media(max-width:700px){
+    
+   
+    
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: fixed;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        right:-200px;
+        top: 108px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    
+    
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+
+    
+    .modal-info{
+        padding: 3px;
+    }
+
+    
+/*----------Row-----------*/
+    
+    .row{
+        display: block;
+    }
+    
+    
+    /*----------- Main content----------- */
+    
+    .main-content{
+        width: 90%;
+        margin: auto;
+    }
+
+
+
+
+    /* Side content  */
+    .said-content{
+        display: none;
+    }
+    
+
+    .marque-news marquee{
+        width: 60%;
+    }
+
+
+/*-------------Notice Board---------*/
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
