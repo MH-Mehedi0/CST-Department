@@ -152,12 +152,12 @@ p{
 
 .content{
     width: 90%;
-    margin:  auto;
+    margin: 0 auto;
     padding: 50px 0 50px 0;
     background: #fafafa;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.65);
 }
-.content-wrap{
+.content-wraper{
     display: flex;
     justify-content: space-between;
 }
@@ -178,6 +178,7 @@ p{
     position: relative;
     width: 100%;
     background: green;
+    margin: 0 auto;
 }
 .marque-news h3{
     color: #fff;
@@ -418,7 +419,7 @@ table td img{
 
 .notice-page-col{
     height: 3000px;
-    overflow: auto;
+    overflow: hidden;
 }
 .showAll{
     display: none;
@@ -555,6 +556,15 @@ table td img{
         padding: 3px;
     }
 
+/*------text box----------*/
+    
+    .hero-text h1{
+        font-size: 22px;
+    }
+    .hero-text p{
+        font: 12px;
+    }
+    
     
 /*----------Row-----------*/
     
@@ -565,12 +575,17 @@ table td img{
     
     /*----------- Main content----------- */
     
+    .content{
+        width: 90%;
+        background: none;
+        box-shadow:none;
+    }
     .main-content{
         width: 90%;
         margin: auto;
     }
 
-    .content-wrap{
+    .content-wraper{
         flex-direction: column;
     }
     
@@ -579,6 +594,7 @@ table td img{
     .asid-content{
         display: block;
         width: 90%;
+        border: none;
     }
     
 
@@ -598,6 +614,7 @@ table td img{
         overflow-x: scroll;
         overflow-y: hidden;
     }
+    
     table{
         width: 180%;
         padding: 10px;
