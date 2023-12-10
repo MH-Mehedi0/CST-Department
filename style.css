@@ -10,7 +10,7 @@ h1,h2,h3,h4,h5,h6{
 }
 #bn{
     font-family: 'Tiro Bangla', serif;
-
+    font-weight: 500;
 }
 body{
     background: rgba(216, 215, 215, 0.83);
@@ -138,7 +138,8 @@ p{
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
-    padding: 10px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 .row{
     display: flex;
@@ -153,7 +154,7 @@ p{
 .content{
     width: 90%;
     margin: 0 auto;
-    padding: 50px 0 50px 0;
+    padding: 50px 0 0px 0;
     background: #fafafa;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.65);
 }
@@ -170,7 +171,8 @@ p{
 .asid-content{
     width: 25%;
     margin: 0 auto;
-    border: 1px solid #ccc;
+    box-shadow: -2px 0px 3px #ccc;
+    border: 0px solid #ccc;
 }
 
 /* ---------------Marque news---------------  */
@@ -378,7 +380,7 @@ table td img{
     text-align: center;
     margin-top: 5px;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 500;
     margin-bottom: 3px;
 }
 .teachersInfo-col p{
@@ -414,6 +416,7 @@ table td img{
 /*--------------Notice Board page----------*/
 
 .sub-header{
+    min-height: 73vh;
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/noticepage.png); 
 }
 
@@ -457,14 +460,6 @@ table td img{
     cursor: pointer; 
 }
 
-/*
-.active{
-    color: green;
-    background-color: #fff;
-    background-repeat: no-repeat;
-}
-*/
-
 
 .btn1,.btn2{
     display: inline-block;
@@ -484,6 +479,90 @@ table td img{
     align-items: baseline;
 }
 
+/*------------Teachers Information Pag---------*/
+
+.teacher-header{
+    min-height: 73vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/teachersInfo.png); 
+}
+.teachers{
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px;
+}
+.teachers h2{
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 30px 0px 10px;
+    border-bottom: 3px solid #ff7600;
+}
+.sub-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.techer-col{
+    flex-basis: 29%;
+    border-radius: 10px;
+    background: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 5%;
+    
+}
+.techer-col img{
+    width: 100%;
+    height: 300px;
+    object-fit:cover;
+}
+.info{
+    margin-top: 10px;
+}
+.info h3{
+    text-align: center;
+    font-weight: 500;
+}
+.info p{
+    text-align: center;
+    padding: 0;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #000;
+}
+.info span p{
+    color: #c65f04;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -493,11 +572,16 @@ table td img{
     width: 100%;
     text-align: center;
     padding: 30px 0;
+    background: #404040;
 }
 .footer h4{
     margin-bottom: 25px;
     margin-top: 20px;
     font-weight: 600;
+    color: #fff;
+}
+.footer p{
+    color: #fff;
 }
 .icons .fa-brands{
     color: #f44336;
@@ -637,6 +721,13 @@ table td img{
     .pagination-items ul li{
         margin-bottom: 8px;
     }
+    
+/*---------Teachers info page -----*/
+    
+    .techer-col img{
+        object-fit:contain;
+    }
+    
     
 }
 
