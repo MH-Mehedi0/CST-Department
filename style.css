@@ -150,14 +150,16 @@ p{
 
 /*--------------- Body content-------------- */
 
-.body-content{
+.content{
     width: 90%;
     margin:  auto;
-    display: flex;
-    justify-content: space-between;
     padding: 50px 0 50px 0;
     background: #fafafa;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.65);
+}
+.content-wrap{
+    display: flex;
+    justify-content: space-between;
 }
 
 .main-content{
@@ -165,7 +167,7 @@ p{
     margin:0 auto;
     
 }
-.said-content{
+.asid-content{
     width: 25%;
     margin: 0 auto;
     border: 1px solid #ccc;
@@ -214,7 +216,7 @@ p{
     padding-top: 
     border: 1px solid #ccc;
     position: relative;
-    overflow:hidden;
+    overflow:auto;
 }
 table{
     width: 100%;
@@ -225,7 +227,8 @@ table{
 table tr:nth-child(odd){
     background-color: #d8d8d8;
 }
-table td, th{
+
+table, td, th{
     padding: 10px;
     border: 1px solid #ccc;
 }
@@ -340,51 +343,9 @@ table td img{
 
 
 
-/*<!------------Footer------------->*/
-
-.footer{
-    width: 100%;
-    text-align: center;
-    padding: 30px 0;
-}
-.footer h4{
-    margin-bottom: 25px;
-    margin-top: 20px;
-    font-weight: 600;
-}
-.icons .fa-brands{
-    color: #f44336;
-    margin: 0 13px;
-    cursor: pointer;
-    padding: 18px 0;
-}
-.fa-heart{
-    color: #f44336;
-}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*--------------Side Content------------*/
+/*--------------Aside Content------------*/
 
 
 
@@ -445,6 +406,10 @@ table td img{
 }
 
 
+
+
+
+
 /*--------------Notice Board page----------*/
 
 .sub-header{
@@ -459,9 +424,89 @@ table td img{
     display: none;
 }
 
+/*-------Pagimation---------*/
+
+.pagination{
+    width: 95%;
+    text-align: left;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+.pagination-items{
+    width: 100%;
+    display: flex;
+    padding:5px 20px;
+    border-radius: 6px;
+}
+.pagination-items ul{
+    margin: 10px 30px;
+}
+.pagination-items ul li{
+    list-style: none;
+    display: inline-block;
+    background: #ccc;
+    margin: 0 10px;
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 45px;
+    cursor: pointer; 
+}
+
+/*
+.active{
+    color: green;
+    background-color: #fff;
+    background-repeat: no-repeat;
+}
+*/
+
+
+.btn1,.btn2{
+    display: inline-block;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.fa-solid{
+    color: #000;
+    margin: 0 10px;
+    font-size: 18px;
+    align-items: baseline;
+}
 
 
 
+
+/*<!------------Footer------------->*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.icons .fa-brands{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.fa-heart{
+    color: #f44336;
+}
 
 
 
@@ -483,11 +528,11 @@ table td img{
     }
     .nav-links{
         position: fixed;
-        background: #f44336;
+        background: green;
         height: 100vh;
         width: 200px;
         right:-200px;
-        top: 108px;
+        top: 0px;
         text-align: left;
         z-index: 2;
         transition: 1s;
@@ -525,22 +570,57 @@ table td img{
         margin: auto;
     }
 
-
-
-
+    .content-wrap{
+        flex-direction: column;
+    }
+    
+    
     /* Side content  */
-    .said-content{
-        display: none;
+    .asid-content{
+        display: block;
+        width: 90%;
     }
     
 
     .marque-news marquee{
         width: 60%;
     }
+    
+    .fb-page{
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+/* ---------Notice Board---------*/
+
+    .notice-col{
+        width: 95%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    table{
+        width: 180%;
+        padding: 10px;
+        font-size: 16px;
+        border-collapse: collapse;
+    }
 
 
-/*-------------Notice Board---------*/
+/*-------------Pagination---------*/
    
+    .pagination{
+        flex-wrap: wrap;
+    }
+    .pagination-items{
+        flex-wrap: wrap;
+    }
+    .pagination-items ul{
+        flex-wrap: wrap;
+    }
+    .pagination-items ul li{
+        margin-bottom: 8px;
+    }
+    
 }
 
 
